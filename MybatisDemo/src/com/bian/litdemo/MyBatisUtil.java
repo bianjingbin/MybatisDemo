@@ -8,7 +8,7 @@
  * Id: MyBatisUtil.java,v3.0 2018年12月5日 bianjingbin Exp
  * ==============================================
  */
-package com.bian;
+package com.bian.litdemo;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -15,9 +15,9 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.bian.Dept;
-import com.bian.DeptMapper;
-import com.bian.MyBatisUtil;
+import com.bian.litdemo.Dept;
+import com.bian.litdemo.DeptMapper;
+import com.bian.litdemo.MyBatisUtil;
 
 public class SimpleTest {
 	public static void main(String[] args) throws Exception {

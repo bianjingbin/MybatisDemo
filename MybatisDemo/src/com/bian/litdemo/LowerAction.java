@@ -8,10 +8,10 @@
  * Id: Action.java,v3.0 2018年12月4日 bianjingbin Exp
  * ==============================================
  */
-package com.bian;
+package com.bian.litdemo;
 
-public class UpperAction implements Action{
-	
+public class LowerAction implements Action{
+
 	private String message;
 	
 	public String getMessage() {
@@ -24,7 +24,7 @@ public class UpperAction implements Action{
 	
 	@Override
 	public String execute(String str) {
-		return (getMessage()+" "+str).toUpperCase();
+		return (getMessage()+" "+str).toLowerCase();
 	}
 
 }

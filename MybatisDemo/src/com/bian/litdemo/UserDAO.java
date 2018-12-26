@@ -8,7 +8,7 @@
  * Id: SampleDAO.java,v3.0 2018年12月4日 bianjingbin Exp
  * ==============================================
  */
-package com.bian;
+package com.bian.litdemo;
 
 import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
