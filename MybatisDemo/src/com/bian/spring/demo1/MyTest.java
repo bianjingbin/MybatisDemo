@@ -12,18 +12,19 @@ package com.bian.spring.demo1;
 
 import static org.junit.Assert.assertEquals;
 
+import java.net.MalformedURLException;
+
 import org.junit.Test;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
 @SuppressWarnings("deprecation")
 public class MyTest {
 	
 	@Test
-	public static void main(String[] args) {
+	public static void main(String[] args) throws BeansException, MalformedURLException {
 		BeanFactory bf=new XmlBeanFactory(new ClassPathResource("beanFactoryTest.xml"));
 		MyTestBean bean=(MyTestBean) bf.getBean("MyTestBean");
 		assertEquals("testStr", bean.getStr());
